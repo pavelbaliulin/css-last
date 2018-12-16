@@ -1,0 +1,28 @@
+ul {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+}
+/* 
+input:checked + label {
+  visibility: hidden;
+} */
+
+input:checked + label + div ul {
+  /* visibility: hidden; */
+  flex-direction: column-reverse;
+}
+label {
+  border: 20px solid transparent;
+  border-bottom: 20px solid black;
+}
+input {
+  display: none;
+}
+input:checked + label {
+  border: 20px solid transparent;
+  border-top: 20px solid black;
+  position: relative;
+  top: 26px;
+}
